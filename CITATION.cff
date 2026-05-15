@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+title: "silkworm-fpga-ml: Hardware-aware classical-ML pipeline for silkworm Grasserie detection on PYNQ-Z2"
+message: "If you use this software, please cite both this repository and the underlying reference paper [1]."
+type: software
+authors:
+  - given-names: Talha
+    family-names: Sarıkaya
+    email: talha.off@gmail.com
+    affiliation: "Istanbul Technical University, Faculty of Electrical and Electronics Engineering"
+repository-code: "https://github.com/yoctocandela/silkworm-fpga-ml"
+url: "https://github.com/yoctocandela/silkworm-fpga-ml"
+abstract: >
+  Hardware-aware classical machine-learning pipeline for early Grasserie-disease
+  detection in silkworms, designed for streaming inference on a PYNQ-Z2
+  (Xilinx Zynq-7020) FPGA.  Each cropped worm is described by an 84-dimensional
+  integer feature stack (LBP histogram, magnitude-weighted gradient-orientation
+  histogram, and per-channel color means, all pooled over a 2×2 spatial grid)
+  and classified by a 50-tree, depth-15 Random Forest trained with a 2.5×
+  class weight on Grasserie and a P(Grasserie) ≥ 0.40 decision rule.  On the
+  Roboflow Silkworm Diseases v1 dataset, the pipeline reaches 91.54 % test
+  accuracy, 95.58 % Grasserie recall, 87.82 % Grasserie precision, and
+  0.027 ms per-sample CPU inference, while remaining synthesisable in
+  hand-written Verilog within the Zynq-7020 LUT/DSP budget.
+keywords:
+  - silkworm
+  - sericulture
+  - Grasserie
+  - local binary patterns
+  - random forest
+  - edge ML
+  - FPGA
+  - PYNQ-Z2
+  - classical machine learning
+license: MIT
+date-released: 2026-05-12
+version: "1.0.0"
+references:
+  - type: article
+    authors:
+      - family-names: "Binson"
+        given-names: "V A"
+      - family-names: "Manju"
+        given-names: "G"
+    title: "Automated Disease Detection in Silkworms Using Machine Learning Techniques"
+    journal: "Advance Sustainable Science, Engineering and Technology (ASSET)"
+    volume: 6
+    issue: 4
+    start: "02404015"
+    year: 2024
+    doi: "10.26877/asset.v6i4.965"
+  - type: data
+    authors:
+      - name: "Silkworm Annotation"
+    title: "Silkworm Diseases - v1"
+    year: 2024
+    url: "https://universe.roboflow.com/silkworm-annotation-y6ztu/silkworm-diseases-y0bro/dataset/1"
+    license: "CC-BY-4.0"

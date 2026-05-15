@@ -1,0 +1,59 @@
+# --- Dataset (NOT redistributed; see data/README.md) -----------------------
+silkworm_dataset_yolov8/
+processed_dataset/
+data/silkworm_dataset_yolov8/
+data/processed_dataset/
+
+# --- Generator outputs at root (final PDFs live in docs/) ------------------
+/silkworm_presentation.pptx
+/silkworm_presentation.pdf
+/silkworm_presentation_with_notes.pptx
+/silkworm_presentation_with_notes.pdf
+/silkworm_presentationdsadsa.pptx
+/silkworm_presentationsadsad.pdf
+/silkworm_report.docx
+/silkworm_report.pdf
+/silkworm_report_final.docx
+/silkworm_report_final.pdf
+
+# --- Personal / Ninova submission files (do not publish) -------------------
+/My_notes.docx
+/talha_sarıkaya_*.docx
+/talha_sarikaya_*.docx
+/talha_sarıkaya_*.pdf
+/talha_sarikaya_*.pdf
+
+# --- Duplicate of src/strict_validation_fixed.py (kept only in src/) -------
+/strict_validation_fixed.py
+/train_models_old.py
+
+# --- Stale / one-off charts (replaced by figs/*) ---------------------------
+/rf_tuning_graph.png
+
+# --- Internal working notes (Claude / scratch, not for publication) --------
+DELIVERABLES.md
+SLIDE_CUTS.md
+cowork_outputs/
+
+# --- Python / editor / OS junk ---------------------------------------------
+*.pyc
+__pycache__/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Python venv -----------------------------------------------------------
+.venv/
+venv/
+env/
+
+# --- Misc ------------------------------------------------------------------
+*.log
+nul
+*.zip
+
+# Rapor Oluşturucu Scriptler
+reports/make_report.py
+reports/make_presentation.py
