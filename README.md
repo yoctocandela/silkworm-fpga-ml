@@ -142,9 +142,6 @@ python src/fpga_classical_best.py
 #    → expected: test accuracy 91.54 %, Grasserie recall 95.58 %,
 #                Grasserie precision 87.82 %
 
-# 4) regenerate the deliverable artifacts (PDFs + figures)
-python reports/make_report.py        # silkworm_report.docx + figs/*
-python reports/make_presentation.py  # silkworm_presentation.pptx + figs/*
 ```
 
 All inference timings reported are measured on a stock laptop CPU through scikit-learn's compiled tree-evaluation path; they serve as a **conservative upper bound** for the eventual hand-RTL FPGA implementation.
